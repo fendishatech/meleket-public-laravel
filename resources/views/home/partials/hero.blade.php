@@ -1,3 +1,3 @@
-<section class="px-6 h-[400px] flex items-center justify-center">
-    <h1 class="text-center text-4xl text-black font-bold">Every Child is intelligent!</h1>
+<section class="px-6 h-[500px] flex items-center justify-center hero-bg">
+    <h1 class="text-center text-3xl md:text-5xl text-white font-bold">Every Child is intelligent!</h1>
 </section>

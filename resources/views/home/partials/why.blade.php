@@ -4,7 +4,7 @@
 
 
 <section class="px-6">
-    <h1 class="py-6 text-center text-4xl text-black font-bold">Why Meleket school</h1>
+    <h1 class="py-6 my-6 text-center text-4xl text-black font-bold">Why Meleket school</h1>
     <div class="container my-12 mx-auto px-4 md:px-12 text-blue-900">
         <div class="flex flex-wrap -mx-1 lg:-mx-4">
             @foreach ($items as $item)

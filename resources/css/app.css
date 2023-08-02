@@ -5,3 +5,36 @@
 body {
     font-family: 'Poppins', sans-serif;
 }
+
+.hero-bg {
+    height: 400px;
+    background-image: url('/public/images/hero/hero-01.jpg');
+    background-size: cover;
+    background-position: center;
+    /* other styles here */
+}
+
+.hero-bg {
+    position: relative;
+}
+
+.hero-bg::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Adjust the opacity and color as needed */
+    z-index: 1;
+    /* Ensure the overlay is above the background image */
+}
+
+.hero-bg h1 {
+    position: relative;
+    z-index: 2;
+    /* Ensure the text is above the overlay */
+    color: #fff;
+    /* Set the color of the text */
+}
