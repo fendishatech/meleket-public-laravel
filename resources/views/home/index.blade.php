@@ -2,5 +2,10 @@
 
 
 @section('content')
-    <h1>Home Page</h1>
+    {{-- Hero --}}
+    @include('home.partials.hero')
+    {{-- Why --}}
+    @include('home.partials.why')
+    {{-- About --}}
+    @include('home.partials.about')
 @endsection
