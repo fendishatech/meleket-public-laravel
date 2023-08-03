@@ -2,5 +2,8 @@
 
 
 @section('content')
-    <h1>Services Page</h1>
+    {{-- What We do --}}
+    @include('services.partials.what-we-do')
+    {{-- Programs --}}
+    @include('services.partials.programmes')
 @endsection

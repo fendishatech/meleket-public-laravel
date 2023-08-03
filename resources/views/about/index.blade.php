@@ -2,5 +2,8 @@
 
 
 @section('content')
-    <h1>About Page</h1>
+    {{-- Mission and vision --}}
+    @include('about.partials.mission-vision')
+    {{-- Logo Description --}}
+    @include('about.partials.logo')
 @endsection

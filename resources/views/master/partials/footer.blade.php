@@ -36,12 +36,20 @@
                 {{-- Address --}}
                 <h1 class="border-b-2 border-gray-600 mb-6">Address</h1>
 
-                <ul class="flex flex-col items-start gap-4 text-white">
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/about">About</a></li>
-                    <li><a href="/services">Services</a></li>
-                    <li><a href="/contact">Contact Us</a></li>
-                </ul>
+                <div class="flex flex-col items-start gap-4 text-white">
+                    <div class="flex gap-2 items-center">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>Addis Ababa Ethiopia</p>
+                    </div>
+                    <div class="flex gap-2 items-center">
+                        <i class="fa-solid fa-envelope"></i>
+                        <p>meleketschool@gmail.com</p>
+                    </div>
+                    <div class="flex gap-2 items-center">
+                        <i class="fa fa-phone" aria-hidden="true"></i>
+                        <p>+251 911 651652</p>
+                    </div>
+                </div>
             </div>
             <!-- END Column -->
 
@@ -50,12 +58,10 @@
                 {{-- Working Hours --}}
                 <h1 class="border-b-2 border-gray-600 mb-6">Working Hours</h1>
 
-                <ul class="flex flex-col items-start gap-4 text-white">
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/about">About</a></li>
-                    <li><a href="/services">Services</a></li>
-                    <li><a href="/contact">Contact Us</a></li>
-                </ul>
+                <div class="flex flex-col items-start gap-4 text-white">
+                    <p>8:00AM - 4:00PM -Monday - Friday</p>
+                    <p>8:00AM - 12:00am -Saturday</p>
+                </div>
             </div>
             <!-- END Column -->
         </div>

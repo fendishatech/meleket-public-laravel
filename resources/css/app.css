@@ -35,6 +35,6 @@ body {
     position: relative;
     z-index: 2;
     /* Ensure the text is above the overlay */
-    color: #fff;
+    color: #29cdff;
     /* Set the color of the text */
 }

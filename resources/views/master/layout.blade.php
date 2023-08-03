@@ -20,6 +20,8 @@
     @include('master.partials.header')
     {{-- Content --}}
     @yield('content')
+    {{-- CTA --}}
+    @include('master.partials.cta')
     {{-- Footer --}}
     @include('master.partials.footer')
 </body>

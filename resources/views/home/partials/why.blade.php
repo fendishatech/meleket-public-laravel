@@ -2,119 +2,23 @@
     $items = [['title' => 'We really care for children’s holistic development', 'icon' => 'fa-desktop', 'image' => '/images/why/why-04.jpg'], ['title' => 'We provide high quality service with reasonable price', 'icon' => 'fa-rocket', 'image' => '/images/why/why-02.jpg'], ['title' => 'We arrange convenient modalities of payment for you.', 'icon' => 'fa-fan', 'image' => '/images/why/why-03.jpg']];
 @endphp
 
+<section class="w-full flex flex-col">
+    <h1 class="py-6 my-6 text-center text-4xl text-black font-bold">Why Meleket School</h1>
+    <div class="flex flex-col sm:flex-row">
+        @foreach ($items as $item)
+            @if (isset($item['title']) && isset($item['icon']) && isset($item['image']))
+                <div class="p-4 w-full sm:w-1/2 md:w-1/3">
+                    <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+                        <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="{{ $item['image'] }}"
+                            alt="{{ $item['title'] }}">
+                        <div class="p-6 flex flex-col items-center">
+                            <i class="fa {{ $item['icon'] }} my-4 text-blue-900 text-4xl" aria-hidden="true"></i>
+                            <h1 class="title-font text-lg font-medium text-blue-900 mb-3">{{ $item['title'] }}</h1>
 
-<section class="px-6">
-    <h1 class="py-6 my-6 text-center text-4xl text-black font-bold">Why Meleket school</h1>
-    <div class="container my-12 mx-auto px-4 md:px-12 text-blue-900">
-        <div class="flex flex-wrap -mx-1 lg:-mx-4">
-            @foreach ($items as $item)
-                @if (isset($item['title']) && isset($item['icon']) && isset($item['image']))
-                    <div class="my-1 px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/3 ">
-                        <article class="overflow-hidden rounded-lg shadow-sm hover:shadow-md">
-                            <a href="#">
-                                <img alt="{{ $item['title'] }}" class="block h-auto w-full" src="{{ $item['image'] }}">
-                            </a>
-                            <header class="flex flex-col items-center justify-between leading-tight p-2 md:p-4">
-                                {{-- Logo --}}
-                                <i class="fa {{ $item['icon'] }} my-4 text-4xl" aria-hidden="true"></i>
-                                <h1 class="text-lg">
-                                    <a class="no-underline " href="#">
-                                        {{ $item['title'] }}
-                                    </a>
-                                </h1>
-                            </header>
-                        </article>
+                        </div>
                     </div>
-                @endif
-            @endforeach
-
-        </div>
-    </div>
-</section>
-
-<section class="w-full flex flex-col sm:flex-row">
-    <div class="p-4 w-full sm:w-1/2 md:w-1/3">
-        <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
-            <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="/images/why/why-04.jpg" alt="blog">
-            <div class="p-6">
-                <h1 class="title-font text-lg font-medium text-blue-900 mb-3">We really care for children’s holistic
-                    development</h1>
-
-            </div>
-        </div>
-    </div>
-    <div class="p-4 w-full sm:w-1/2 md:w-1/3">
-        <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
-            <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="/images/why/why-03.jpg" alt="blog">
-            <div class="p-6">
-                <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">CATEGORY</h2>
-                <h1 class="title-font text-lg font-medium text-gray-900 mb-3">The 400 Blows</h1>
-                <p class="leading-relaxed mb-3">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing
-                    microdosing
-                    tousled waistcoat.</p>
-                <div class="flex items-center flex-wrap">
-                    <a class="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0">Learn More
-                        <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"
-                            fill="none" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M5 12h14"></path>
-                            <path d="M12 5l7 7-7 7"></path>
-                        </svg>
-                    </a>
-                    <span
-                        class="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
-                        <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none"
-                            stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
-                            <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
-                            <circle cx="12" cy="12" r="3"></circle>
-                        </svg>1.2K
-                    </span>
-                    <span class="text-gray-400 inline-flex items-center leading-none text-sm">
-                        <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none"
-                            stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
-                            <path
-                                d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z">
-                            </path>
-                        </svg>6
-                    </span>
                 </div>
-            </div>
-        </div>
-    </div>
-    <div class="p-4 w-full sm:w-1/2 md:w-1/3">
-        <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
-            <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="/images/why/why-02.jpg" alt="blog">
-            <div class="p-6">
-                <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">CATEGORY</h2>
-                <h1 class="title-font text-lg font-medium text-gray-900 mb-3">The 400 Blows</h1>
-                <p class="leading-relaxed mb-3">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing
-                    microdosing
-                    tousled waistcoat.</p>
-                <div class="flex items-center flex-wrap">
-                    <a class="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0">Learn More
-                        <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"
-                            fill="none" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M5 12h14"></path>
-                            <path d="M12 5l7 7-7 7"></path>
-                        </svg>
-                    </a>
-                    <span
-                        class="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
-                        <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none"
-                            stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
-                            <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
-                            <circle cx="12" cy="12" r="3"></circle>
-                        </svg>1.2K
-                    </span>
-                    <span class="text-gray-400 inline-flex items-center leading-none text-sm">
-                        <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none"
-                            stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
-                            <path
-                                d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z">
-                            </path>
-                        </svg>6
-                    </span>
-                </div>
-            </div>
-        </div>
+            @endif
+        @endforeach
     </div>
 </section>
