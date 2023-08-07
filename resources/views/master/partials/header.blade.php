@@ -36,7 +36,7 @@
             </div>
         </div>
         {{-- Links --}}
-        <ul class="flex items-center gap-4 text-white">
+        <ul class="flex items-center gap-4 text-white  text-2xl">
             <li><a href="/">Home</a></li>
             <li><a href="/about">About</a></li>
             <li><a href="/services">Services</a></li>

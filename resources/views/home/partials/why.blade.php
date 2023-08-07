@@ -4,10 +4,10 @@
 
 <section class="w-full flex flex-col">
     <h1 class="py-6 my-6 text-center text-4xl text-black font-bold">Why Meleket School</h1>
-    <div class="flex flex-col sm:flex-row">
+    <div class="flex flex-col md:flex-row">
         @foreach ($items as $item)
             @if (isset($item['title']) && isset($item['icon']) && isset($item['image']))
-                <div class="p-4 w-full sm:w-1/2 md:w-1/3">
+                <div class="p-4">
                     <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
                         <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="{{ $item['image'] }}"
                             alt="{{ $item['title'] }}">
